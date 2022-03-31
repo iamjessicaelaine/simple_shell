@@ -12,4 +12,3 @@
 /* function prototypes */
 
 #endif /* SHELL_H */
-
