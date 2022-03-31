@@ -1,0 +1,37 @@
+.TH hsh 1 "March 2022" "version 1.0"
+
+.SH NAME
+.B hsh
+- a simple UNIX command interpreter
+
+.SH SYNOPSIS
+.B ./hsh
+
+.SH DESCRIPTION
+The
+.B hsh
+utility is a simple UNIX command interpreter, also referred to as a simple shell, that will execute commands read from a command line string, the standard input, or a specified file. Upon execution the shell will display a prompt and wait for the user to type a command line string into the standard input that will be parsed and executed by passing all available arguments to the command/program called by user input. THe utility handles simple command line strings that contain the name of the program or command to be executed followed by an arguments required, if any. There are no semicolons, pipes, redirections or any other advanced features that are typical of the GNU Bourne-Again SHell which this shell mimics.
+
+.SH RETURN VALUE
+Upon successful execution of this utility, a prompt ($) will appear and the program's execution will pause until a user types a command line string followed by a newline character which will cause the program to resume execution based on input received. If program execution fails, program will close with an error that will print to the standard output. Progam will continue to run awaiting input from user until the builtin command "exit" is entered.
+
+.SH EXAMPLES
+.B 1. Executing the shell and awaiting user input from stdin
+.IP "shiningstar@ubuntu:~/simple_shell$ ./hsh"
+.IP "$ "
+.PP
+.B 2. Exiting the shell
+.IP "shiningstar@ubuntu:~/simple_shell$ ./hsh"
+.IP "$ exit"
+.IP "shiningstar@ubuntu:~/simple_shell$ "
+
+.SH BUGS
+
+
+.SH AUTHORS
+Jessica Loyd - 4239@holbertonschool.com
+.PP
+Yannick Ntwari - 2906@holbertonschool.com
+
+.SH SEE ALSO
+sh(1)
